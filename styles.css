@@ -886,3 +886,92 @@
 
 }
 
+/* ================================
+   beautyGal Project Page Styles
+================================ */
+.project-page {
+    padding: 60px 20px;
+    max-width: 1280px;
+    margin: auto;
+    font-family: "Public Sans", sans-serif;
+  }
+  
+  .project-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  .project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .project-gallery img {
+    width: 300px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .project-meta {
+    font-size: 18px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .preview-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 16px 32px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 0.3s;
+  }
+  
+  .preview-button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .project-description {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  
+  .project-description h2,
+  .project-description h3 {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .project-description ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .project-description li {
+    margin-bottom: 10px;
+  }
+
