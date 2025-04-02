@@ -783,3 +783,30 @@
       width: 100%;
     }
   }
+
+    /* Footer */
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+      }
+      
+      .copyright {
+        font-family: "Public Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0;
+      }
+      
+      .social-links {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .social-icon {
+        width: 48px;
+        height: 48px;
+      }
+    
