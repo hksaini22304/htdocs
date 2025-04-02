@@ -1,0 +1,13 @@
+/* Base styles */
+:root {
+    --primary-color: #6c65ff;
+    --text-color: #171717;
+    --text-secondary: #908f8f;
+    --border-color: #d1d4ff;
+  }
+  
+
+  body {
+    overflow-x: hidden;
+
+  }
