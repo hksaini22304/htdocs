@@ -407,3 +407,125 @@
       padding: 20px;
     }
   }
+
+    /* Stack Section */
+    .stack-section {
+        padding: 100px 0;
+      }
+      
+      .stack-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      
+      /* Flip Card Base */
+      .flip-card {
+        background-color: transparent;
+        perspective: 1000px;
+        width: 400px;
+        height: 400px;
+      }
+      
+      /* Inner card transition layer */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 24px;
+        transition: transform 0.8s ease;
+        transform-style: preserve-3d;
+      }
+      
+      /* Flip interaction */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Front and Back face styles */
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 24px;
+        background-color: #fff;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        backface-visibility: hidden;
+        border: 22px solid rgba(209, 212, 255, 0.5);
+        box-sizing: border-box;
+      }
+      
+      /* Front face */
+      .flip-card-front {
+        z-index: 2;
+      }
+      
+      /* Back face */
+      .flip-card-back {
+        transform: rotateY(180deg);
+        text-align: center;
+      }
+      
+      /* Icon and label */
+      .stack-icon {
+        width: 170px;
+        height: 170px;
+      }
+      
+      .stack-name {
+        font-family: "Public Sans", sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0;
+      }
+      
+      /* Back card text */
+      .stack-back-text {
+        font-family: "Public Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--text-color);
+        line-height: 1.5;
+        padding: 10px;
+        margin: 0;
+      }
+      
+      @media (max-width: 991px) {
+        .stack-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      
+      @media (max-width: 640px) {
+        .stack-grid {
+          grid-template-columns: 1fr;
+        }
+      
+        .flip-card-front,
+        .flip-card-back {
+          padding: 20px;
+        }
+      
+        .stack-icon {
+          width: 120px;
+          height: 120px;
+        }
+      
+        .stack-name {
+          font-size: 24px;
+        }
+      
+        .stack-back-text {
+          font-size: 16px;
+        }
+      }
+    
