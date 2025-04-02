@@ -168,3 +168,27 @@
         }
       }
     
+        /* Profile Image */
+  .profile-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 2;
+  }
+  
+  .profile-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 48px;
+    object-fit: cover;
+  }
+
+  @media (max-width:  694px) {
+    .profile-image {
+      margin-top: 60px;
+      width: 230px;
+      height: 230px;
+      z-index: 2;
+    }
+  }
