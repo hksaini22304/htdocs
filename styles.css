@@ -1020,3 +1020,34 @@
 
 
   }
+  
+  
+  .main-nav {
+    background-color: #f8f8ff;
+}
+  .resume-section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f8f8ff;
+  }
+  
+  .resume-title {
+    font-family: "wainscoted", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+  }
+  
+  .resume-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .resume-image {
+    width: 90%;
+    max-width: 900px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
