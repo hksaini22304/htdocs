@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Wainscoted";
+    src: url(Wainscoted.ttf)format("truetype");
+}
+
+
 /* Base styles */
 :root {
     --primary-color: #6c65ff;
@@ -994,4 +1000,23 @@
     background-color: var(--primary-color);
     color: white;
     transform: scale(1.05);
+  }
+
+  .projects-intro {
+    font-family: "Public Sans", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px auto 40px auto;
+    max-width: 640px;
+    color: var(--text-secondary);
+  }
+
+
+  .projects-section .section-title {
+    font-family:"wainscoted", sans-serif;
+    font-size: 70px;
+    color:#2a29ff;
+    margin-top: -100px;
+
+
   }
