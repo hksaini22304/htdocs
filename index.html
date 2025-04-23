@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
     <link rel="stylesheet" href="styles.css">
     <link
 href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Inter:wght@400;700&family=PT+Serif:ital,wght@1,700&family=Manrope:wght@600&display=swap"
 rel="stylesheet"
 />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
 <title>Harjot Kaur Saini - Portfolio Website</title>
+
+ <link rel="icon" type="image/me-icon" href="images/logo.png" />
+
 
 <header class="main-nav">
 <nav class="nav-container">
@@ -36,45 +39,53 @@ rel="stylesheet"
       </div>
       <div class="profile-container">
         <img
-          src="images/me1.png"
+          src="images/me.png"
           alt="Profile"
           class="profile-image"
         />
       </div>
+
+
       <a href= "#contact" class="cta-button">Let's Work Together!</a>
+
+      <div>
     
       <div class="decorative-elements">
         <img
           src="images/glasspyramid.png"
           alt=""
-          class="glass-pyramid"
-        />p
+          class="decorative-elements glass-pyramid"
+        >
         <img
           src="images/glasscylinder.png"
           alt=""
-          class="glass-cylinder"
-        />
+          class="decorative-elements glass-cylinder"
+        >
         <img
           src="images/glass cube.png"
           alt=""
-          class="glass-cube"
-        />
+          class="decorative-elements glass-cube"
+        >
         <img
           src="images/glassring.png"
           alt=""
-          class="glass-ring"
-        />
+          class="decorative-elements glass-ring"
+        >
         <img
           src="images/glassstar.png"
           alt=""
-          class="glass-star"
-        />
+          class="decorative-elements glass-star"
+        >
         <img
           src="images/glasssaturn.png"
           alt=""
-          class="glass-saturn"
-        />
+          class="decorative-elements glass-saturn"
+        >
       </div>
+
+    </div>
+
+
     
     </section>
     
@@ -103,35 +114,28 @@ rel="stylesheet"
       
   <h2 class="section-title">About Me</h2>
 
-  <div class="about-content">
-    <p class="about-text">
+  <section class="about-box">
       Hey, there! I'm Harjot Kaur Saini, a passionate creator specializing in
       web and mobile design. As a third-year student at Diablo Valley College,
       I am pursuing a degree in Interaction Design for Web and Mobile
       Platforms as well as Psychology, along with a Certificate in Business
       Marketing. My academic career is driven by a great passion about how
       design impacts human behavior, which I incorporate into every project I
-      work on.
-    </p>
-    <p class="about-text">
-      A hands-on approach to education has impacted my career path in design.
+      work on. <p>
+
+       A hands-on approach to education has impacted my career path in design.
       Through a range of courses, I've been able to work on projects that
       reflect real-world issues, allowing me to combine academic understanding
       with practical application. This diverse experience not only improves my
       technical abilities, but it also broadens my creative approach, ensuring
-      that each design is both visually appealing and intuitively useful.
-    </p>
-    <p class="about-text">
-      On the technical side of things, I am deeply learning the fundamentals
-      of current web development, beginning with HTML5 and CSS3, with hopes to
-      soon incorporate JavaScript. Furthermore, my familiarity with
-      industry-standard technologies such as Adobe Creative Suite and Semrush
-      enables me to create designs that are not only visually appealing but
-      also tactically successful. Looking ahead, I'm excited to get more
-      expertise in the cosmetics industry, where I believe design has a
-      transformational impact on brand identities and user experiences.
-    </p>
-  </div>
+      that each design is both visually appealing and intuitively useful. </p>
+
+    <p>  A hands-on approach to education has impacted my career path in design.
+      Through a range of courses, I've been able to work on projects that
+      reflect real-world issues, allowing me to combine academic understanding
+      with practical application. This diverse experience not only improves my
+      technical abilities, but it also broadens my creative approach, ensuring
+      that each design is both visually appealing and intuitively useful. </p>
 </section>
 
 <section id="stack" class="stack-section">
@@ -222,19 +226,22 @@ rel="stylesheet"
             </div>
           </div>
         </div>
-      
+
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="images/chatgpt icon.png" alt="ChatGPT" class="stack-icon" />
-              <p class="stack-name">ChatGPT</p>
+              <img src="images/vscode.png" alt="VS Code" class="stack-icon" />
+              <p class="stack-name">VS Code</p>
             </div>
             <div class="flip-card-back">
-              <p class="stack-back-text">On UX/UI projects and academic tasks, ChatGPT is my intelligent helper for brainstorming, design refinement, and immediate feedback.
-                 Its innovative recommendations, debugging assistance, and research help speed up my learning and improve my problem-solving abilities as I tackle tough design issues in college that I face.</p>
+              <p class="stack-back-text">VS Code is my preferred code editor for creating and managing online projects. 
+                It offers a clean and fast environment for developing HTML and CSS, as well as sophisticated extensions that boost productivity, ease debugging, and allow for seamless version control via Git. 
+                Whether I'm building responsive layouts or fine-tuning animations, VS Code keeps my process running smoothly and orderly.</p>
             </div>
           </div>
         </div>
+      
+        
       
         <div class="flip-card">
           <div class="flip-card-inner">
@@ -356,21 +363,28 @@ rel="stylesheet"
                   class="contact-image"
                 />
               </div>
-              <form class="contact-form">
-                <div class="form-group">
-                  <label for="email" class="form-label">Email address</label>
-                  <input type="email" id="email" class="form-input" required />
-                </div>
+              <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="c79ec655-0624-420b-b2ac-762e4b8b80cf">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+              
                 <div class="form-group">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" id="name" class="form-input" required />
+                  <input type="text" id="name" name="name" class="form-input" required>
                 </div>
+              
                 <div class="form-group">
-                  <label for="message" class="form-label">Your message</label>
-                  <textarea id="message" class="form-textarea" required></textarea>
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" name="email" class="form-input" required>
                 </div>
+              
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" class="form-textarea" required></textarea>
+                </div>
+              
                 <button type="submit" class="submit-button">Submit</button>
               </form>
+              
             </div>
           </section>
           </main>
