@@ -35,7 +35,7 @@
     color: #000;
     white-space: nowrap;
     min-width: 200%;
-    animation: scrollBanner1 40s linear infinite, scrollBanner2 25s linear infinite 25s;
+    animation: scrollBanner1 100s linear infinite, scrollBanner2 100s linear infinite 40s;
   }
 
   @keyframes scrollBanner1 {
