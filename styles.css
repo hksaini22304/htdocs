@@ -35,7 +35,7 @@
     color: #000;
     white-space: nowrap;
     min-width: 200%;
-    animation: scrollBanner1 100s linear infinite, scrollBanner2 100s linear infinite 40s;
+    animation: scrollBanner1 100s linear infinite, scrollBanner2 100s linear infinite 100s;
   }
 
   @keyframes scrollBanner1 {
@@ -93,63 +93,112 @@
   }
 
    /* Navigation */
-   .main-nav {
-    padding: 43px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:sticky;
-    top:0;
-    z-index: 10;
-    
-  } 
-  
-  .nav-container {
-    
-    width: 522px;
-    height: 48px;
-    border-radius: 24px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.11);
-    background-color: #fff;
-  }
-  
-  .nav-list {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0 20px 0 0;
-    margin: 0;
-    height: 100%;
-  }
-  
-  .nav-link {
-    font-family: Inter, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 12px 20px;
-    color: var(--text-secondary);
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 400px) {
-    .nav-container {
-      width: 70%;
-    }
-  
-    .nav-list {
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-    }
 
-    .nav-link {
-      margin-top: 15px;
-      font-size: 10px;
-      display: flex;
-    }
-  
+.main-nav {
+  padding: 43px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 650px; 
+  height: 60px;        
+  margin: 0 auto;        
+  padding: 0 1rem;        
+  border-radius: 24px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.11);
+  background-color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 1.5rem;             
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;        
+}
+
+/* Base link styling + hover underline */
+.nav-link {
+  position: relative;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 12px 20px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Active link stays colored + underlined */
+.nav-link.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .nav-list {
+    justify-content: space-around;
+    gap: 0.75rem;
   }
+}
+
+@media (max-width: 307px) {
+  .nav-container {
+    width: 70%;
+    padding-top: 20px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-link {
+    margin-top: 15px;
+    font-size: 10px;
+    display: flex;
+  }
+}
+
+
+
 
     /* Hero Section */
     .hero-section {
@@ -261,6 +310,7 @@
   .decorative-elements img {
     position: absolute;
     z-index: 0;
+    opacity: 0.8;
    
   }
   
@@ -298,6 +348,7 @@
     width: 200px; 
     height: 200px;
     display: flex;
+   
 
   }
 
@@ -306,7 +357,7 @@
     top: 350px; 
     right: 40px; 
     width: 180px; 
-    z-index:
+   
     
   }
 
@@ -347,6 +398,8 @@
       right: 0px !important;
       width: 130px !important;
       height: 130px !important;
+      z-index: 1 !important;
+      
     }
   
     .glass-ring {
@@ -355,6 +408,7 @@
      left: 40%;;
       width: 100px !important;
       z-index: 1 !important;
+     
     }
     
   
@@ -408,7 +462,7 @@
   .glass-polygon
   {
     position: relative;
-    top: 0;
+    top:200px;
     left: 0;
     z-index: -2;
     transform: rotate(45deg);
@@ -470,7 +524,6 @@
   }
 
     /* Stack Section */
-   /* Stack Section */
 .stack-section {
   padding: 100px 20px;
 }
@@ -612,6 +665,7 @@
       /* Projects Section */
   .projects-section {
     padding: 100px 0;
+    object-position: center;
   }
   
   .projects-grid {
@@ -620,6 +674,7 @@
     gap: 40px; 
     max-width: 1140px;
     margin: 0 auto;
+    object-position: center;
   } 
   
   .project-card {
@@ -628,6 +683,7 @@
     gap: 10px;
     margin: 0 auto;
     padding: 20px;
+    object-position: center;
   }
   
   .project-image {
@@ -671,11 +727,12 @@
     text-decoration: none;
   }
   
-  @media (max-width: 991px) {
+  @media (max-width: 809px) {
     .project-card,
     .projects-grid {
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
+      object-position: center;
     
     }
   }
@@ -898,8 +955,15 @@
       
       .social-icon {
         width: 48px;
-        height: 48px;
+        display: inline-block;
+        transition: transform 0.6s ease;
+        transform-origin: center center;
       }
+      
+      .social-icon:hover {
+        transform: rotate(360deg);
+      }
+      
     
       /* General Button Hover */
 .cta-button:hover,
@@ -908,7 +972,7 @@
 .submit-button:hover {
   background-color: var(--primary-color);
   color: #fff;
-  border-color: var(--primary-color);
+
   transform: scale(1.03);
   transition: all 0.25s ease;
 }
@@ -948,34 +1012,6 @@
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* ================================
-   NAVIGATION LINK HOVER EFFECT
-================================ */
-.nav-link {
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--primary-color);
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 8px;
-  width: 0%;
-  height: 2px;
-  background-color: var(--primary-color);
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-  left: 0;
-
-}
 
 /* ================================
    beautyGal Project Page Styles
@@ -1000,6 +1036,8 @@
     gap: 20px;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    align-items: start;
+  
   }
   
   .project-gallery img {
@@ -1142,3 +1180,6 @@
     
   }
 
+
+
+  
