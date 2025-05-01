@@ -11,12 +11,79 @@
     --text-secondary: #908f8f;
     --border-color: #d1d4ff;
   }
+
+
   
   body {
     overflow-x: hidden;
     min-height: 100vh;
     margin: 0;
   }
+
+  .animated-text{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "Public Sans", sans-serif;
+    min-width: 280px;
+  }
+
+  .animated-text span{
+    position: relative;
+    font-family: Wainscoted, sans-serif;
+
+  }
+
+  .animated-text span::before{
+    content: 'UX/UI Designer';
+    color:#6c65ff; 
+    animation: words 20s infinite;
+    
+  }
+
+  .animated-text span::after{
+    content: ''; 
+    background-color: #ffffff;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 40px;
+    border-left: 2px solid #6c65ff;
+    right: -8px;
+    animation: cursor .6s infinite, typing 20s steps(14) infinite;
+  }
+
+  @keyframes cursor{
+    to{
+      border-left: 2px solid #ffffff; 
+    }
+  }
+
+  @keyframes words{ 
+    0%,20%{
+      content: 'UX/UI Designer';
+    }
+    21%,40%{
+      content: 'Web Designer';
+    }
+    41%,60%{
+      content: 'Psychology Student';
+    }
+    61%,80%{
+      content: 'Beauty Enthusiast';
+    }
+    81%,100%{
+      content: 'Marketing Specialist';
+    }
+  }
+
+  @keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+    }
+  }
+  
 
   .name-banner {
     position: absolute;
@@ -25,6 +92,7 @@
     z-index: -1;
     pointer-events: none;
   }
+
 
   .banner-text {
     display: inline-block;
