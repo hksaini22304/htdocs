@@ -18,7 +18,32 @@
     overflow-x: hidden;
     min-height: 100vh;
     margin: 0;
+    transform: translateY(20px);
+    filter: blur(8px);
+    opacity: 0;
+    animation: blurFocus 0.8s ease-out forwards;
+    
   }
+
+
+  @keyframes blurFocus {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none !important;
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+}
+ 
 
   .animated-text{
     font-size: 28px;
