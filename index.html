@@ -1,22 +1,31 @@
-{page_top}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Inter:wght@400;700&family=PT+Serif:ital,wght@1,700&family=Manrope:wght@600&display=swap"
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+<title>Harjot Kaur Saini - Portfolio Website</title>
+
+ <link rel="icon" type="image/png" href="images/logo.png">
 
 <header class="main-nav">
   <nav class="nav-container">
     <ul class="nav-list">
-      <li><a href="{homepage}" class="nav-link active">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#stack" class="nav-link">Stack</a></li>
-      <li><a href="{homepage}/projects" class="nav-link">Projects</a></li>
-      <li><a href="{homepage}/resume" class="nav-link">Resume</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="{homepage}/index.html" class="nav-link active">Home</a></li>
+      <li><a href="index.html#about" class="nav-link">About</a></li>
+      <li><a href="index.html#stack" class="nav-link">Stack</a></li>
+      <li><a href="{homepage}/projectshome.html" class="nav-link">Projects</a></li>
+      <li><a href="{homepage}/resumepage.html" class="nav-link">Resume</a></li>
+      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 </header>
-
-
-<body>
-<main>
-
 
 
 <main class="main-content">
@@ -27,17 +36,16 @@
           <span class="hero-name">Harjot!</span>
         </h1>
       </div>
-      
-      <div class="animated-text">
+
+        <div class="animated-text">
             I'm a <span></span>
           </div>
       
-      
       <div class="profile-container">
-       <img src="{site_url}folio_images/me.png"
+        <img
+          src="images/me.png"
           alt="Profile"
-          class="profile-image"
-        />
+          class="profile-image">
       </div>
 
 
@@ -45,38 +53,45 @@
 
       <div>
     
-           <div class="decorative-elements">
+      <div class="decorative-elements">
         <img
-          <img src="{site_url}folio_images/glasspyramid.png"
+          src="images/glasspyramid.png"
           alt=""
           class="decorative-elements glass-pyramid"
         >
-         <img src="{site_url}folio_images/glasscylinder.png"
+        <img
+          src="images/glasscylinder.png"
           alt=""
           class="decorative-elements glass-cylinder"
         >
-        <img src="{site_url}folio_images/glass_cube.png"
+        <img
+          src="images/glasscube.png"
           alt=""
           class="decorative-elements glass-cube"
         >
-         <img src="{site_url}folio_images/glassring.png"
+        <img
+          src="images/glassring.png"
           alt=""
           class="decorative-elements glass-ring"
         >
-          <img src="{site_url}folio_images/glassstar.png"
+        <img
+          src="images/glassstar.png"
           alt=""
           class="decorative-elements glass-star"
         >
-        <img src="{site_url}folio_images/glasssaturn.png"
+        <img
+          src="images/glasssaturn.png"
           alt=""
           class="decorative-elements glass-saturn"
         >
       </div>
 
     </div>
+
+
     
     </section>
-        
+    
     
     <div class="name-banner">
         <div class="banner-text">
@@ -84,39 +99,61 @@
         </div>
       </div>
       
-    <section id="about" class="about-section">
-     
+      <div class="about-section">
+
+
         <div class="decorative-elements">
-         <img src="{site_url}folio_images/3dglasspolygon.png"
+          <img
+            src="images/3dglasspolygon.png"   
             alt=""
             class="glass-polygon">
-            
-          <img src="{site_url}folio_images/glassdoublehalfsphere.png"
+          <img
+            src="images/glassdoublehalfsphere.png"
             alt=""
             class="glass-sphere">
         </div>
-        </div> 
-   {exp:channel:entries channel="about"}
-   
-  <h2 class="section-title">{title}</h2>
-  
-
+        </div>
+        
+  <section id="about" class="about-section">
+      
+  <h2 class="section-title">About Me</h2>
 
   <section class="about-box">
 
-<h4>{subheading}</h4>
+<h4>Get to Know Me!</h4>
 
-     <p>{long_description}</p>
+      Hey, there! I'm Harjot Kaur Saini, a passionate creator specializing in
+      web and mobile design. As a third-year student at Diablo Valley College,
+      I am pursuing a degree in Interaction Design for Web and Mobile
+      Platforms as well as Psychology, along with a Certificate in Business
+      Marketing. My academic career is driven by a great passion about how
+      design impacts human behavior, which I incorporate into every project I
+      work on. <p>
+
+       A hands-on approach to education has impacted my career path in design.
+      Through a range of courses, I've been able to work on projects that
+      reflect real-world issues, allowing me to combine academic understanding
+      with practical application. This diverse experience not only improves my
+      technical abilities, but it also broadens my creative approach, ensuring
+      that each design is both visually appealing and intuitively useful. </p>
+
+    <p>  A hands-on approach to education has impacted my career path in design.
+      Through a range of courses, I've been able to work on projects that
+      reflect real-world issues, allowing me to combine academic understanding
+      with practical application. This diverse experience not only improves my
+      technical abilities, but it also broadens my creative approach, ensuring
+      that each design is both visually appealing and intuitively useful. </p>
 
 </section>
- {/exp:channel:entries}
 </section>
 
 <section id="stack" class="stack-section">
   <h2 class="section-title">My Stack</h2>
 
   <div class="stack-grid">
+
     {exp:channel:entries channel="stack"}
+
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -128,61 +165,112 @@
           </div>
         </div>
       </div>
+
     {/exp:channel:entries}
+
   </div>
 </section>
-
-         <section id="projects" class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-        
-      {exp:channel:entries channel='projects'}
-      
-          <article class="project-card">
-          
-            <a href= "projects" class="project-card">
-              <img src="{cover_image}" alt="Project" class="project-image" />
-              <p class="project-category">{category}</p>
-              <h3 class="project-title">{title}</h3> 
-            </a>
-            
-          </article>
-        
-        
-       {/exp:channel:entries}
-       
-         </div>
-         </section>
-       
-        <a href="projectshome.html" class="view-more-button">View More</a>
-        
-        
-        
-        <section id="timeline" class="timeline-section">
-  <h2 class="section-title">My journey so far…</h2>
-  <p class="timeline-subtitle">
-    Explore the milestones and experiences that are shaping my career, year by year.
-  </p>
-
- <div class="timeline-container">
- 
-  {exp:channel:entries channel="timeline"}
-    <div class="timeline-item">
-      <h3 class="timeline-role">{title}</h3>
-      <p class="timeline-company">{company_name}</p>
-      <p class="timeline-period">{period}</p>
-    </div>
-  {/exp:channel:entries}
   
-</div>
+<section id="projects" class="projects-section">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+  
+{exp:channel:entries channel='projects'}
 
+    <article class="project-card">
+      <a href= "{project_url}" class="project-card">
+        <img src="{cover_image}" alt="Project" class="project-image" />
+        <p class="project-category">{category}</p>
+        <h3 class="project-title">{title}</h3>
+        
+      </a>
+    </article>
+    </div>
+  
+ {/exp:channel:entries}
+ 
+  <a href="projectshome.html" class="view-more-button">View More</a>
 
-{contact}
-   
-          
-          </main>    
+      
+      <section id="timeline" class="timeline-section">
+        <h2 class="section-title">My journey so far...</h2>
+        <p class="timeline-subtitle">
+          Explore the milestones and experiences that are shaping my career, year by
+          year.
+        </p>
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <h3 class="timeline-role">Mental Health Clinic Intern</h3>
+            <p class="timeline-company">Allied Medical & Consultation Services</p>
+            <p class="timeline-period">Jun '17 - Current</p>
+          </div>
+          <div class="timeline-item">
+            <h3 class="timeline-role">Club Vice President</h3>
+            <p class="timeline-company">UNICEF USA - Benicia High School</p>
+            <p class="timeline-period">Aug '20 - Jun '22</p>
+          </div>
+          <div class="timeline-item">
+            <h3 class="timeline-role">Club Secretary</h3>
+            <p class="timeline-company">UNICEF USA - Benicia High School</p>
+            <p class="timeline-period">Aug'18 - Jun '20</p>
+          </div>
+        </div>
+        <a href="resumepage.html" class="view-resume-button">View Resume</a>
+      
+        </section>
     
-{page_bottom}
+        <section id="contact" class="contact-section">
+            <h2 class="contact-title">Contact Me</h2>
+            <div class="contact-container">
+              <div class="contact-image-wrapper">
+                <img
+                  src="images/contact_me_icon.png"
+                  alt="Contact"
+                  class="contact-image">
+                  
+              </div>
+              <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="c79ec655-0624-420b-b2ac-762e4b8b80cf">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+              
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+              
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+              
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" class="form-textarea" required></textarea>
+                </div>
+              
+                <button type="submit" class="submit-button">Submit</button>
+              </form>
+              
+            </div>
+          </section>
+        
+          
+          <footer class="main-footer">
+            <p class="copyright">© Copyright 2025 - Harjot Kaur Saini</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/harjot-saini223/" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedinicon.png" alt="LinkedIn" class="social-icon">
+              </a>
+              <a href="https://github.com/hksaini22304" target="_blank" aria-label="GitHub">
+                <img src="images/githubicon.png" alt="GitHub" class="social-icon">
+              </a>
+              <a href="https://www.instagram.com/harjot.kaur.saini" target="_blank" aria-label="Instagram">
+                <img src="images/instagramicon.png" alt="Instagram" class="social-icon">
+              </a>
+            </div>
+            </footer>
+              
 
+          </main>
 </body>
 </html>
