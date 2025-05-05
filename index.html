@@ -1,30 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link
-href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Inter:wght@400;700&family=PT+Serif:ital,wght@1,700&family=Manrope:wght@600&display=swap"
-rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-<title>Harjot Kaur Saini - Portfolio Website</title>
-
- <link rel="icon" type="image/png" href="images/logo.png">
+{page_top}
 
 <header class="main-nav">
   <nav class="nav-container">
     <ul class="nav-list">
-      <li><a href="index.html" class="nav-link active">Home</a></li>
-      <li><a href="index.html#about" class="nav-link">About</a></li>
-      <li><a href="index.html#stack" class="nav-link">Stack</a></li>
-      <li><a href="projectshome.html" class="nav-link">Projects</a></li>
-      <li><a href="resumepage.html" class="nav-link">Resume</a></li>
-      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      <li><a href="{homepage}" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#stack" class="nav-link">Stack</a></li>
+      <li><a href="{homepage}/projects" class="nav-link">Projects</a></li>
+      <li><a href="{homepage}/resume" class="nav-link">Resume</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 </header>
+
+
+<body>
+<main>
+
 
 
 <main class="main-content">
@@ -35,16 +27,17 @@ rel="stylesheet">
           <span class="hero-name">Harjot!</span>
         </h1>
       </div>
-
-        <div class="animated-text">
+      
+      <div class="animated-text">
             I'm a <span></span>
           </div>
       
+      
       <div class="profile-container">
-        <img
-          src="images/me.png"
+       <img src="{site_url}folio_images/me.png"
           alt="Profile"
-          class="profile-image">
+          class="profile-image"
+        />
       </div>
 
 
@@ -52,45 +45,38 @@ rel="stylesheet">
 
       <div>
     
-      <div class="decorative-elements">
+           <div class="decorative-elements">
         <img
-          src="images/glasspyramid.png"
+          <img src="{site_url}folio_images/glasspyramid.png"
           alt=""
           class="decorative-elements glass-pyramid"
         >
-        <img
-          src="images/glasscylinder.png"
+         <img src="{site_url}folio_images/glasscylinder.png"
           alt=""
           class="decorative-elements glass-cylinder"
         >
-        <img
-          src="images/glasscube.png"
+        <img src="{site_url}folio_images/glass_cube.png"
           alt=""
           class="decorative-elements glass-cube"
         >
-        <img
-          src="images/glassring.png"
+         <img src="{site_url}folio_images/glassring.png"
           alt=""
           class="decorative-elements glass-ring"
         >
-        <img
-          src="images/glassstar.png"
+          <img src="{site_url}folio_images/glassstar.png"
           alt=""
           class="decorative-elements glass-star"
         >
-        <img
-          src="images/glasssaturn.png"
+        <img src="{site_url}folio_images/glasssaturn.png"
           alt=""
           class="decorative-elements glass-saturn"
         >
       </div>
 
     </div>
-
-
     
     </section>
-    
+        
     
     <div class="name-banner">
         <div class="banner-text">
@@ -98,330 +84,105 @@ rel="stylesheet">
         </div>
       </div>
       
-      <div class="about-section">
-
-
+    <section id="about" class="about-section">
+     
         <div class="decorative-elements">
-          <img
-            src="images/3dglasspolygon.png"   
+         <img src="{site_url}folio_images/3dglasspolygon.png"
             alt=""
             class="glass-polygon">
-          <img
-            src="images/glassdoublehalfsphere.png"
+            
+          <img src="{site_url}folio_images/glassdoublehalfsphere.png"
             alt=""
             class="glass-sphere">
         </div>
-        </div>
-        
-  <section id="about" class="about-section">
-      
-  <h2 class="section-title">About Me</h2>
+        </div> 
+   {exp:channel:entries channel="about"}
+   
+  <h2 class="section-title">{title}</h2>
+  
+
 
   <section class="about-box">
 
-<h4>Get to Know Me!</h4>
+<h4>{subheading}</h4>
 
-      Hey, there! I'm Harjot Kaur Saini, a passionate creator specializing in
-      web and mobile design. As a third-year student at Diablo Valley College,
-      I am pursuing a degree in Interaction Design for Web and Mobile
-      Platforms as well as Psychology, along with a Certificate in Business
-      Marketing. My academic career is driven by a great passion about how
-      design impacts human behavior, which I incorporate into every project I
-      work on. <p>
-
-       A hands-on approach to education has impacted my career path in design.
-      Through a range of courses, I've been able to work on projects that
-      reflect real-world issues, allowing me to combine academic understanding
-      with practical application. This diverse experience not only improves my
-      technical abilities, but it also broadens my creative approach, ensuring
-      that each design is both visually appealing and intuitively useful. </p>
-
-    <p>  A hands-on approach to education has impacted my career path in design.
-      Through a range of courses, I've been able to work on projects that
-      reflect real-world issues, allowing me to combine academic understanding
-      with practical application. This diverse experience not only improves my
-      technical abilities, but it also broadens my creative approach, ensuring
-      that each design is both visually appealing and intuitively useful. </p>
+     <p>{long_description}</p>
 
 </section>
+ {/exp:channel:entries}
 </section>
 
 <section id="stack" class="stack-section">
-
   <h2 class="section-title">My Stack</h2>
 
-<div>      
-      
-      <div class="stack-grid">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/figmaicon.png" alt="Figma" class="stack-icon">
-              <p class="stack-name">Figma</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="stack-back-text">I use Figma to create intuitive user interfaces, dynamic prototypes, and real-time collaborations with peers and mentors. 
-                The platform makes it easier to brainstorm, wireframe, and create high-fidelity prototypes, all while improving my UX/UI skills. 
-                It promotes iterative design, which improves my portfolio and academic work via professional-grade visual communication and continual development.</p>
-            </div>
+  <div class="stack-grid">
+    {exp:channel:entries channel="stack"}
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="{cover_image}" alt="stack logo" class="stack-icon"/>
+            <p class="stack-name">{title}</p>
           </div>
-        </div>
-      
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/framericon.png" alt="Framer" class="stack-icon">
-              <p class="stack-name">Framer</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="stack-back-text">Framer helps me create dynamic, interactive prototypes that imitate user experiences. 
-                The platform supports motion design, interactive animations, and quick design iteration.
-                 I can see my ideas in real time and integrate complex micro-interactions and responsive layouts to improve my UX/UI design portfolio for academic and professional opportunities.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/notionicon.png" alt="Notion" class="stack-icon">
-              <p class="stack-name">Notion</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="stack-back-text">Notion organizes my academic work, research notes, and UX/UI design ideas. 
-                The platform organizes my class assignments, design materials, and project timetables. 
-                The configurable database and collaborative features ease task tracking and brainstorming, assuring efficiency while balancing learning and creativity.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/HTML5icon.png" alt="HTML" class="stack-icon">
-              <p class="stack-name">HTML</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="stack-back-text">I create websites, academic portfolios, and UX/UI design projects in HTML. 
-                Semantic tags and standardized markup help me organize and convey information in a clear way. 
-                HTML allows me to prototype concepts and try interactive layouts, which is the foundation of web design.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/CSS3icon.png" alt="CSS" class="stack-icon">
-              <p class="stack-name">CSS</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="stack-back-text">I integrate creative design ideas to academic assignments and personal projects by styling, visualizing web pages, and digital portfolios using CSS.
-                 I can regulate layout, typography, and color schemes to ensure interface consistency. 
-                CSS creates responsive, beautiful designs that follow latest UX/UI trends, improving user experience.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/creative_cloud_icon.webp" alt="Creative Cloud" class="stack-icon">
-              <p class="stack-name">Creative Cloud</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="stack-back-text">I use Adobe Creative Cloud for comprehensive design and creative media projects, leveraging industry-standard tools like Photoshop, Illustrator, and XD.
-                 This suite enables me to craft high-quality graphics, edit images, and produce compelling visual content for academic assignments and UX/UI prototypes. 
-                 It enhances my creative workflow and portfolio development remarkably.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/vscode.png" alt="VS Code" class="stack-icon">
-              <p class="stack-name">VS Code</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="stack-back-text">VS Code is my preferred code editor for creating and managing online projects. 
-                It offers a clean and fast environment for developing HTML and CSS, as well as sophisticated extensions that boost productivity, ease debugging, and allow for seamless version control via Git. 
-                Whether I'm building responsive layouts or fine-tuning animations, VS Code keeps my process running smoothly and orderly.</p>
-            </div>
-          </div>
-        </div>
-      
-        
-      
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/semrushicon.png" alt="Semrush" class="stack-icon">
-              <p class="stack-name">Semrush</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="stack-back-text">Semrush helps me assess website performance, digital marketing trends, and competitive landscapes. 
-                This tool informs content and user engagement methods for my UX/UI design projects. 
-                It optimizes design choices, improves search ranks, and aligns academic research with industrial norms using data.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/canvaicon.png" alt="Canva" class="stack-icon">
-              <p class="stack-name">Canva</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="stack-back-text">Canva helps me develop attractive visuals, social media posts, academic projects and UX/UI portfolio presentations. 
-                My design process has been quicker by using its user-friendly interface and numerous templates, allowing creative expression and professional visual communication. Canva helps me deliver projects and improve as a designer.</p>
-            </div>
+          <div class="flip-card-back">
+            <p class="stack-back-text">{description}</p>
           </div>
         </div>
       </div>
-    </div>
+    {/exp:channel:entries}
+  </div>
+</section>
 
-    </section>
-  
-
-  
-      <section id="projects" class="projects-section">
+         <section id="projects" class="projects-section">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
-      
-          <article class="project-card">
-            <a href="beautygal.html" class="project-card">
-              <img src="images/beautyGal_thumbnail.png" alt="Project 1" class="project-image">
-              <p class="project-category">UX/UI Design</p>
-              <h3 class="project-title">beautyGal - App Prototype</h3>
-            </a>
-          </article>
-          
-          <article class="project-card">
-            <a href="eunoria.html" class="project-card">
-              <img src="images/eunoriatile.png" alt="Eunoria Project" class="project-image">
-              <p class="project-category">UX/UI Design</p>
-              <h3 class="project-title">Eunoria - App Prototype</h3>
-            </a>
-          </article>
-      
-          <article class="project-card">
-            <a href="illustrator.html" class="project-card">
-              <img src="images/adobeillustratorportfoliotile.png" alt="Adobe Illustrator Portfolio - Digital Illustration" class="project-image">
-              <p class="project-category">Digital Illustration</p>
-              <h3 class="project-title">Adobe Illustrator Portfolio</h3>
-            </a>
-          </article>
-      
-          <article class="project-card">
-            <a href="indianart.html" class="project-card">
-              <img src="images/Indian_Artwork_HarjotKaurSaini_thumbnail.png" alt="Indian Digital Art" class="project-image">
-              <p class="project-category">Digital Illustration</p>
-              <h3 class="project-title">Rajasthani-style Indian Digital Art</h3>
-            </a>
-          </article>
-          <article class="project-card">
-            <a href="aurabeauty.html" class="project-card">
-              <img src="images/Aura_Beauty_Thumbnail.png" alt="Aura Beauty" class="project-image">
-              <p class="project-category">Digital Marketing</p>
-              <h3 class="project-title">Aura Beauty - Marketing Project</h3>
-            </a>
-          </article>
-      
-          <article class="project-card">
-            <a href="forwardfitnessclub.html" class="project-card">
-              <img src="images/forwardfitnessclubtile.png" alt="Forward Fitness Club" class="project-image">
-              <p class="project-category">Web Design</p>
-              <h3 class="project-title">Forward Fitness Club - Basic Web Design</h3>
-            </a>
-          </article>
-      
-        </div>
-        <a href="projectshome.html" class="view-more-button glow-on-hover">View More</a>
-
-      </section>
-
-      
-      <section id="timeline" class="timeline-section">
-        <h2 class="section-title">My journey so far...</h2>
-        <p class="timeline-subtitle">
-          Explore the milestones and experiences that are shaping my career, year by
-          year.
-        </p>
-        <div class="timeline-container">
-          <div class="timeline-item">
-            <h3 class="timeline-role">Mental Health Clinic Intern</h3>
-            <p class="timeline-company">Allied Medical & Consultation Services</p>
-            <p class="timeline-period">Jun '17 - Current</p>
-          </div>
-          <div class="timeline-item">
-            <h3 class="timeline-role">Club Vice President</h3>
-            <p class="timeline-company">UNICEF USA - Benicia High School</p>
-            <p class="timeline-period">Aug '20 - Jun '22</p>
-          </div>
-          <div class="timeline-item">
-            <h3 class="timeline-role">Club Secretary</h3>
-            <p class="timeline-company">UNICEF USA - Benicia High School</p>
-            <p class="timeline-period">Aug'18 - Jun '20</p>
-          </div>
-        </div>
-        <a href="resumepage.html" class="view-resume-button">View Resume</a>
-      
-        </section>
-    
-        <section id="contact" class="contact-section">
-            <h2 class="contact-title">Contact Me</h2>
-            <div class="contact-container">
-              <div class="contact-image-wrapper">
-                <img
-                  src="images/contact_me_icon.png"
-                  alt="Contact"
-                  class="contact-image">
-                  
-              </div>
-              <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                <input type="hidden" name="access_key" value="c79ec655-0624-420b-b2ac-762e4b8b80cf">
-                <input type="hidden" name="redirect" value="https://web3forms.com/success">
-              
-                <div class="form-group">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" id="name" name="name" class="form-input" required>
-                </div>
-              
-                <div class="form-group">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" id="email" name="email" class="form-input" required>
-                </div>
-              
-                <div class="form-group">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea id="message" name="message" class="form-textarea" required></textarea>
-                </div>
-              
-                <button type="submit" class="submit-button">Submit</button>
-              </form>
-              
-            </div>
-          </section>
         
+      {exp:channel:entries channel='projects'}
+      
+          <article class="project-card">
           
-          <footer class="main-footer">
-            <p class="copyright">© Copyright 2025 - Harjot Kaur Saini</p>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/harjot-saini223/" target="_blank" aria-label="LinkedIn">
-                <img src="images/linkedinicon.png" alt="LinkedIn" class="social-icon">
-              </a>
-              <a href="https://github.com/hksaini22304" target="_blank" aria-label="GitHub">
-                <img src="images/githubicon.png" alt="GitHub" class="social-icon">
-              </a>
-              <a href="https://www.instagram.com/harjot.kaur.saini" target="_blank" aria-label="Instagram">
-                <img src="images/instagramicon.png" alt="Instagram" class="social-icon">
-              </a>
-            </div>
-            </footer>
-              
+            <a href= "projects" class="project-card">
+              <img src="{cover_image}" alt="Project" class="project-image" />
+              <p class="project-category">{category}</p>
+              <h3 class="project-title">{title}</h3> 
+            </a>
+            
+          </article>
+        
+        
+       {/exp:channel:entries}
+       
+         </div>
+         </section>
+       
+        <a href="projectshome.html" class="view-more-button">View More</a>
+        
+        
+        
+        <section id="timeline" class="timeline-section">
+  <h2 class="section-title">My journey so far…</h2>
+  <p class="timeline-subtitle">
+    Explore the milestones and experiences that are shaping my career, year by year.
+  </p>
 
-          </main>
+ <div class="timeline-container">
+ 
+  {exp:channel:entries channel="timeline"}
+    <div class="timeline-item">
+      <h3 class="timeline-role">{title}</h3>
+      <p class="timeline-company">{company_name}</p>
+      <p class="timeline-period">{period}</p>
+    </div>
+  {/exp:channel:entries}
+  
+</div>
+
+
+{contact}
+   
+          
+          </main>    
+    
+{page_bottom}
+
 </body>
 </html>
